@@ -1,0 +1,282 @@
+@charset "UTF-8";
+header {
+    position: relative;    
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%; 
+    max-width: 1440px; /*pc 퍼스트*/
+    margin: 0 auto; 
+    position: relative;
+}
+
+.main_box {
+    background-color: #ff8500;
+}
+
+/*====right-menu====*/
+
+.right-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-menu li > a {
+    color: #fff;
+    font-size: 25px;
+    top: 10px;
+    padding: 20px;
+}
+
+
+/*===main_logo===*/
+.main_logo img{
+    width: 100%;
+    max-width: 100%;
+    padding: 100px;
+
+}
+
+@media (max-width: 450px) { /*모바일*/
+    .header {
+        position: relative;    
+        width: 100%;
+        background-color: #ff8500;
+    }
+    
+    .wrapper {
+        width: 100%; 
+        max-width: 450px;
+        margin: 0 auto; 
+    }
+
+    .main_logo img{
+        width: 100%;
+        max-width: 100%;
+        padding: 100px;
+        background-color: #ff8500;
+    }
+
+    .right-menu {
+        display: none;
+    }
+    
+    .right-menu li > a {
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .mobile-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    }
+    
+    .mobile-btn > span { 
+    display: block;
+    width: 25px; height: 3px;
+    background-color:#fff;
+    }
+    
+    .mobile-btn > span:nth-child(2) {
+    margin: 10px 0;
+    }
+}
+
+
+main {
+    width: 100%;
+}
+
+.about_me{
+    background-color: #fe328b;
+}
+
+.about_me_flex {
+    display: flex;
+}
+
+.about_me_box1 {
+    line-height: 80px;
+}
+    
+
+.rice {
+    color: aliceblue;
+    font-size: 70px;
+}
+
+
+.pro {
+    font: 300px 'HYGothic-Medium';
+    color: black;
+    line-height: 8cm;
+}
+
+
+.about_me_box2 p {
+    padding-top: 120px;
+    padding-left: 100px;
+    font-size: 35px;
+    line-height: 80px;
+    letter-spacing: 10px;
+}
+
+.B {
+    color: aliceblue;
+    font-size: 70px;
+}
+
+.about_me_box3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile  {
+    padding: 50px;
+    padding-left: 130px;
+    padding-top: 100px;
+    width: 100%;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.education {
+    padding-top: 100px;
+    width: 100%;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
+/*======skill=====*/
+.skill_bg img {
+    width: 100%;
+    max-width: 1440px; /* pc 퍼스트 */
+    margin: 0 auto;
+    z-index: 3;
+    position: relative; /* 이미지를 다른 요소 위에 배치 */
+}
+
+/* 스킬 박스 내에서 이미지 및 텍스트를 겹치하기 위한 스타일 설정 */
+.skill_box1_flex {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.skill_box1 {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4; /* 텍스트를 이미지 위에 배치 */
+}
+
+.skill_box1 ul {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 100px;
+    grid-row-gap: 90%;
+    justify-content: space-between;
+    padding-right: 0px;
+}
+
+.skill_box1 li a{
+    width: 100%;
+}
+
+.skill_box1 li:nth-child(3) {
+    grid-column: 1/3;
+}
+
+.skill_box1 li:nth-child(2) a {
+    text-align: right;
+} 
+
+.skill_box1 li:nth-child(5) a {
+    text-align: right;
+} 
+
+.skill_box1 a {
+    font-size: 25px;
+    padding: 20px;
+    text-decoration: none;
+    border: 0px solid #000;
+}
+
+.skill_box2 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 700px;
+    z-index: 4; /* 텍스트를 이미지 위에 배치 */
+}
+
+.skill_box2 ul {
+    width: 50%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    align-items: center;
+    padding: 100px;
+    grid-row-gap: 90%;
+    justify-content: space-between;
+
+}
+
+.skill_box2 li a{
+    width: 100%;
+}
+
+.skill_box2 li:nth-child(3) {
+    grid-column: 1/3;
+}
+
+.skill_box2 li:nth-child(2) a {
+    text-align: right;
+} 
+
+.skill_box2 li:nth-child(3) a {
+    text-align: right;
+} 
+
+.skill_box2 li:nth-child(5) a {
+    text-align: right;
+}
+
+.skill_box2 a {
+    font-size: 25px;
+    padding: 20px;
+    text-decoration: none;
+    border: 0px solid #000;
+}
+
+
+/*===DESIGN====*/
+
+.design_title {
+
+}
+
+.design {
+    background-image: url('./image/Untitled-2.png'); /* 이미지 경로 설정 */
+    background-size: cover; /* 배경 이미지를 컨테이너에 맞춥니다. */
+    background-position: center; /* 배경 이미지를 가운데 정렬합니다. */
+    padding-top: 100px;
+}
+    
+
+.design_title {
+    font: 28px 'Century Gothic';
+}
