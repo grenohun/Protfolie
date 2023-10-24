@@ -153,6 +153,7 @@ main {
 
 
 /*======skill=====*/
+
 .skill_bg img {
     width: 100%;
     max-width: 1440px; /* pc 퍼스트 */
@@ -264,19 +265,153 @@ main {
 
 
 /*===DESIGN====*/
-
-.design_title {
-
-}
-
 .design {
-    background-image: url('./image/Untitled-2.png'); /* 이미지 경로 설정 */
-    background-size: cover; /* 배경 이미지를 컨테이너에 맞춥니다. */
-    background-position: center; /* 배경 이미지를 가운데 정렬합니다. */
-    padding-top: 100px;
+    width: 100%;
+    background: url(../image/Untitled-2.png) no-repeat ;
+    background-size: cover;
 }
-    
+
+.design img {
+    width: 100%; /* 이미지가 부모 요소에 맞게 확장되도록 설정 */
+    height: auto;
+}
 
 .design_title {
-    font: 28px 'Century Gothic';
+    width: 100%;
+    font: 130px 'Century Gothic';
+    text-align: center;
+    padding: 100px;
+}
+
+
+.design_title > span,
+.renewal > span,
+.logo > span,
+.banner > span
+{
+    color: #f54f29;
+}
+
+.renewal {
+    position: absolute;
+    font: 130px 'Century Gothic';
+    width: 720px;
+    height: 540px;
+    padding: 50px;
+    background-color: #f6f6f6;
+    line-height: 80px;
+}
+
+.renewal_box {
+    padding-bottom: 300px;
+}
+
+.renewal_box ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-column-gap: 30px;
+
+}
+
+.renewal_img {
+    cursor: pointer;
+}
+
+
+#btn {
+    background-color: #8f8e8e;
+    width: 180px;
+    height: 85px;
+    border: 0px solid;
+    border-radius: 20px ;
+    float: right;
+    margin-top: 200px;
+    position: relative;
+}
+
+
+#btn img {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+
+    font: 130px 'Century Gothic';
+    width: 720px;
+    height: 540px;
+    padding: 50px;
+    background-color: #f6f6f6;
+    line-height: 80px;
+
+}
+
+
+.logo_img {
+    cursor: pointer;
+}
+
+
+#btn {
+    background-color: #8f8e8e;
+    width: 180px;
+    height: 85px;
+    border: 0px solid;
+    border-radius: 20px ;
+    float: right;
+    margin-top: 200px;
+    position: relative;
+}
+
+
+#btn img {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.banner {
+
+    font: 130px 'Century Gothic';
+    width: 720px;
+    height: 540px;
+    padding: 50px;
+    background-color: #f6f6f6;
+    line-height: 80px;
+
+}
+
+.banner_img {
+    cursor: pointer;
+}
+
+
+#btn {
+    background-color: #8f8e8e;
+    width: 180px;
+    height: 85px;
+    border: 0px solid;
+    border-radius: 20px ;
+    float: right;
+    margin-top: 200px;
+    position: relative;
+}
+
+
+#btn img {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.another_box {
+    display: flex;
+    
 }
